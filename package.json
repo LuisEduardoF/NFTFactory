@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "ipfs-core": "^0.18.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
