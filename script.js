@@ -2,7 +2,7 @@
 let NFTFactoryContract;
 
 // 2. Configuração do endereço do contrato e ABI
-const NFTFactory_Address = "0x492b83acCA4C0c5773937407412d177c8FE8059b";
+const NFTFactory_Address = "0x81f89fc1137401Cd12d69a57a08ef96B32B88D15";
 const NFTFactory_ABI = [
 	{
 		"inputs": [],
@@ -119,7 +119,6 @@ const checkIfOwner = async() => {
         isOwner = owns;
 		nftsymbol = symbol;
 		nftContract = nft;
-		console.log(nftContract)
     } catch (e) {}
 }
 var onetime = true;
