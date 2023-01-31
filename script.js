@@ -125,7 +125,7 @@ const checkIfOwner = async() => {
 var onetime = true;
 function checkOwner() {
     checkIfOwner();
-    if (isOwner && nftsymbol != "Your NIFT" && onetime && window.location.href.search("index") != -1) {
+    if (isOwner && nftsymbol != "Your NIFT" && onetime) {
 		nft_access.style.display = "block";
 		nft_create.style.display = "none";
 		nft_access_button.innerHTML += nftsymbol;
@@ -159,7 +159,7 @@ const createNIFT = () => {
         });
 };
 const accessNIFT = () => {
-	window.location.href = window.location.href.replace("index", "collection.html?contract="+nftContract)
+	window.location.href += "collection.html?contract="+nftContract
 }
 
 nft_access_button.addEventListener("click", accessNIFT)

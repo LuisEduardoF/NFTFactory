@@ -445,6 +445,9 @@ provider.send("eth_requestAccounts", []).then(() => {
         );
         nftSymbol = await NFTContract.symbol()
         owner = await NFTContract.owner();
+		if(owner != signer._address){
+			document.getElementById("buttonADD").style.visibility = "hidden"
+		}
         document.getElementById("titleName").innerHTML += " " + nftSymbol
     
         NFTContract.on('NewQuote', function (event) {
