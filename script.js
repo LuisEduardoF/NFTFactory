@@ -2,7 +2,7 @@
 let NFTFactoryContract;
 
 // 2. Configuração do endereço do contrato e ABI
-const NFTFactory_Address = "0x81f89fc1137401Cd12d69a57a08ef96B32B88D15";
+const NFTFactory_Address = "0xbD8AFAEE28EE3Ecd2627301767F7cb4bEB69E577";
 const NFTFactory_ABI = [
 	{
 		"inputs": [],
